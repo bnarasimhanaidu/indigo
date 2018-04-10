@@ -1,0 +1,51 @@
+<main id="main" class="tg-page-wrapper tg-haslayout">
+    <div class="container">
+<div class="row">
+<div class="main-page-wrapper tg-haslayout"><div class="fw-page-builder-content">    <section class="tg-main-section haslayout  default">
+<div class="builder-items">
+          <div class="col-xs-12 col-md-6 builder-column ">
+ <h3 style="color: #fff; margin-top: -25px;">Who are we ?</h3><p>{{paragrap.name}}</p>
+ </div>
+<div class="col-xs-12 col-md-6 builder-column ">
+<img src="http://www.indigophotoworld.com/indigophoto/wp-content/uploads/2018/01/about-us-600x400.jpg" alt="http://www.indigophotoworld.com/indigophoto/wp-content/uploads/2018/01/about-us-600x400.jpg" width="600" height="400"></div>
+<div class="col-xs-12 col-md-12 builder-column ">
+<h3 style="color: #fff; margin-top: -25px;">What do we do ?</h3>
+<p>{{paragrap.name1}}</p>
+   <p>{{paragrap.name2}}</p>
+          <p><a href="http://www.indigophotoworld.com/indigophoto/hp-indigo-details/" target="_blank" rel="noopener">
+            <button style="width: 200px; height: 50px; background: #fff;">HP INDIGO DETAILS</button></a></p></div>
+</div>
+</section>
+</div>
+</div>				</div>
+</div>
+</main>
+
+<br><br><br><br>
+
+<div class="row">
+  <div class="col-sm-offset-3 col-sm-7">
+      <h4 class="h4s">enter here to change paragraphs and images</h4>
+<form >
+  <div class="form-group"> 
+     <label for="paragraph1">Paragraph 1:</label> 
+     <textarea class="form-control" rows="5" [(ngModel)]=" paragrap.name" placeholder="paragraph" [ngModelOptions]="{standalone: true}"></textarea>
+   </div> 
+  <div class="form-group">
+      <label for="paragraph2">Paragraph 2:</label>
+      <textarea class="form-control" rows="5" [(ngModel)]=" paragrap.name1" placeholder="paragraph" [ngModelOptions]="{standalone: true}"></textarea>
+    </div>
+    <div class="form-group">
+        <label for="paragraph3">Paragraph 3:</label>
+        <textarea class="form-control" rows="5" [(ngModel)]=" paragrap.name2" placeholder="paragraph" [ngModelOptions]="{standalone: true}"></textarea>
+      </div>
+      <!--<div class="form-group">
+        <label for="photo">Photo upload</label>
+        <input type="file" [(ngModel)]="photo.name" class="form-control" [ngModelOptions]="{standalone: true}">
+      </div>
+     
+  <button type="submit" class="btn btn-default">Submit</button>-->
+</form>
+</div>
+
+</div>

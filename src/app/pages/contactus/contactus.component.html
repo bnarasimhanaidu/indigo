@@ -1,0 +1,116 @@
+<section class="tg-main-section haslayout  default" style="padding-top:0px;padding-bottom:0px;background-repeat:no-repeat;background-position:0% 100%; background-size: cover;">
+    <div class="builder-items">
+                    <div class="col-xs-12  col-md-4 builder-column ">
+<div class="sc-services">
+
+<div class="tg-search-categories">
+    <div class="row">
+                    <div class="col-sm-8 col-xs-12 tg-expectwidth">
+                <div class="tg-search-category">
+                    <div class="tg-displaytable">
+                        
+                            <div class="tg-displaytablecell">
+                                <div class="tg-box">
+                                                                                <a href="#"><h3>CONTACT INFO</h3></a>
+                                                                            <img src="//www.indigophotoworld.com/indigophoto/wp-content/uploads/2017/12/contact-us-1.png" alt="CONTACT INFO">                                       
+                                                                             <br><span class="service-list">{{paragrap.address}}</span>
+                                                                             <br><span class="service-list">{{paragrap.address1}}</span>
+                                                                             <span class="service-list">{{paragrap.mobile}}</span>
+                                                                             <span class="service-list">{{paragrap.mobile1}}</span>
+                                                                             <span class="service-list">{{paragrap.fax}}</span>
+                                                                             <br><span class="service-list">{{paragrap.email}}</span>                                        
+                                                                                <a href="#"><span class="tg-show"><em class="icon-add"></em></span></a>
+                                                                        </div>
+                            </div>
+                        
+                    </div>
+                </div>
+            </div>
+                </div>
+ </div>
+</div>
+
+</div>
+<div class="col-xs-12 col-md-6 builder-column ">
+<div class="sc-contact-form">
+<div class="tg-refinesearcharea contact_wrap">
+    <div class="tg-heading-border tg-small">
+  <h2>refine search</h2>
+</div>
+  
+<form class="form-refinesearch tg-haslayout contact_form">
+  <div class="message_contact theme-notification"></div>
+  <fieldset>
+    <div class="row form-data" data-success="Message Sent." data-error="Message Fail." data-email="pampapathi@veniteck.com">
+      <input type="hidden" id="security" name="security" value="7e1e1c0e12"><input type="hidden" name="_wp_http_referer" value="/indigophoto/contact-us/">					<div class="col-sm-6">
+        <div class="form-group">
+          <input type="text" class="form-control" name="subject" placeholder="Subject">
+        </div>
+      </div>
+      <div class="col-sm-6">
+        <div class="form-group">
+          <input type="text" class="form-control" name="username" placeholder="Name">
+        </div>
+      </div>
+      <div class="col-sm-6">
+        <div class="form-group">
+          <input type="email" class="form-control" name="useremail" placeholder="Email">
+        </div>
+      </div>
+      <div class="col-sm-6">
+        <div class="form-group">
+          <input type="text" class="form-control" name="phone" placeholder="Phone">
+        </div>
+      </div>
+      <div class="col-sm-12">
+        <div class="form-group">
+          <textarea class="form-control" name="description" placeholder="Message"></textarea>
+        </div>
+      </div>
+      <div class="col-sm-6">
+        <button type="submit" class="tg-btn contact_now">Send</button>
+      </div>
+    </div>
+  </fieldset>
+</form>
+</div>				
+</div>
+
+</div>
+    </div>
+</section>
+
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+<hr>
+<div class="row">
+  <div class="col-sm-offset-3 col-sm-7">
+      <h4 class="h4s">enter here to change Address and mobile number</h4>
+<form action="">
+    <div class="form-group">
+        <label for="paragraph1">Address1:</label>
+        <textarea [(ngModel)]="paragrap.address" class="form-control" rows="5" id="comment" [ngModelOptions]="{standalone: true}"></textarea>
+      </div>
+      <div class="form-group">
+          <label for="paragraph2">Address2:</label>
+          <textarea [(ngModel)]="paragrap.address1" class="form-control" rows="5" id="comment" [ngModelOptions]="{standalone: true}"></textarea>
+        </div>
+       <div class="form-group">
+            <label for="paragraph3">mobile 1:</label>
+            <input type="text" [(ngModel)]="paragrap.mobile" class="form-control" [ngModelOptions]="{standalone: true}">
+          </div>
+           <div class="form-group">
+              <label for="paragraph3">mobile 2:</label>
+              <input type="text" [(ngModel)]="paragrap.mobile1" class="form-control" [ngModelOptions]="{standalone: true}">
+            </div>
+            <div class="form-group">
+              <label for="paragraph3">Fax:</label>
+              <input type="text" [(ngModel)]="paragrap.fax" class="form-control" [ngModelOptions]="{standalone: true}">
+            </div>
+            <div class="form-group">
+                <label for="paragraph3">Email:</label>
+                <input type="email" [(ngModel)]="paragrap.email" class="form-control" [ngModelOptions]="{standalone: true}">
+              </div>
+  <button type="submit" class="btn btn-default">Submit</button>
+</form>
+</div>
+</div>

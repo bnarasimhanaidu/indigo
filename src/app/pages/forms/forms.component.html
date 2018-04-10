@@ -1,0 +1,77 @@
+<div class="container">
+    <div [hidden]="submitted">
+      <div class="col-md-offset-2 col-md-6">
+  <form (ngSubmit)="onSubmit()">
+  <div class="form-group"> 
+     <label for="paragraph1">Paragraph 1:</label> 
+     <textarea class="form-control" rows="5" [(ngModel)]=" paragrap.name" placeholder="paragraph" [ngModelOptions]="{standalone: true}"></textarea>
+   </div> 
+  <div class="form-group">
+      <label for="paragraph2">Paragraph 2:</label>
+      <textarea class="form-control" rows="5" [(ngModel)]=" paragrap.name1" placeholder="paragraph" [ngModelOptions]="{standalone: true}"></textarea>
+    </div>
+    <div class="form-group">
+        <label for="paragraph3">Paragraph 3:</label>
+        <textarea class="form-control" rows="5" [(ngModel)]=" paragrap.name2" placeholder="paragraph" [ngModelOptions]="{standalone: true}"></textarea>
+      </div>
+      <div class="form-group">
+        <label for="photo">Photo upload</label>
+        <input type="file" [(ngModel)]="photo.name" class="form-control" [ngModelOptions]="{standalone: true}">
+      </div>
+      <div class="form-group">
+        <label for="paragraph1">Address1:</label>
+        <textarea [(ngModel)]="paragrap.address" class="form-control" rows="5" id="comment" [ngModelOptions]="{standalone: true}"></textarea>
+      </div>
+      <div class="form-group">
+          <label for="paragraph2">Address2:</label>
+          <textarea [(ngModel)]="paragrap.address1" class="form-control" rows="5" id="comment" [ngModelOptions]="{standalone: true}"></textarea>
+        </div>
+       <div class="form-group">
+            <label for="paragraph3">mobile 1:</label>
+            <input type="text" [(ngModel)]="paragrap.mobile" class="form-control" [ngModelOptions]="{standalone: true}">
+          </div>
+           <div class="form-group">
+              <label for="paragraph3">mobile 2:</label>
+              <input type="text" [(ngModel)]="paragrap.mobile1" class="form-control" [ngModelOptions]="{standalone: true}">
+            </div>
+            <div class="form-group">
+              <label for="paragraph3">Fax:</label>
+              <input type="text" [(ngModel)]="paragrap.fax" class="form-control" [ngModelOptions]="{standalone: true}">
+            </div>
+            <div class="form-group">
+                <label for="paragraph3">Email:</label>
+                <input type="email" [(ngModel)]="paragrap.email" class="form-control" [ngModelOptions]="{standalone: true}">
+              </div>
+  <button type="submit" class="btn btn-default">Submit</button>
+</form>
+</div>
+
+
+<div [hidden]="!submitted">
+    <h2>You submitted the following:</h2>
+    <div class="row">
+      <div class="col-xs-3">Paragraph1</div>
+      <div class="col-xs-9  pull-left">{{paragrap.name }}</div>
+    </div>
+    <div class="row">
+      <div class="col-xs-3">paragraph2</div>
+      <div class="col-xs-9 pull-left">{{paragrap.name1}}</div>
+    </div>
+    <div class="row">
+      <div class="col-xs-3">paragraph3</div>
+      <div class="col-xs-9 pull-left">{{paragrap.name2}}</div>
+    </div>
+    <div class="row">
+        <div class="col-xs-3">paragraph3</div>
+        <div class="col-xs-9 pull-left">{{paragrap.name2}}</div>
+      </div>
+      <div class="row">
+          <div class="col-xs-3">paragraph3</div>
+          <div class="col-xs-9 pull-left">{{paragrap.name2}}</div>
+        </div>
+    <br>
+    <button class="btn btn-primary" (click)="submitted=false">Edit</button>
+  </div>
+</div>
+
+</div>

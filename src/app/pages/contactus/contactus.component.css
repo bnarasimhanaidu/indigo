@@ -1,0 +1,29 @@
+.sub-heading{
+    background: #2297dc;
+    color: #fff;
+    float: left;
+    font-size: 20px;
+    width: 100%;
+    padding: 10px;
+    text-align: center;
+    font-family: Verdana, Geneva, sans-serif;
+}
+
+.builder-items {
+    float: left;
+    width: 100%;
+}
+
+.tg-search-category .tg-box {
+    z-index: 3;
+    padding: 0 60px;
+    overflow: hidden;
+}
+img{
+    align-content: center
+}
+hr{
+    color: black;
+    border: black;
+    
+}
